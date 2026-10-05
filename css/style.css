@@ -1,0 +1,1239 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: clip;
+}
+
+:root {
+    --rev-wh-color: #fff;
+    --rev-bl-color: #000;
+    --rev-a-bg: #000837;
+    --rev-bg-sec-2: #f2e8d6;
+    --rev-bg-sec-4: #f7f7dc;
+    --rev-foo-ter: #3a4045;
+    --text-color-y: #bc8e35;
+    --text-color-p: #181818;
+    --bg-color-tech: #f7f7dc;
+    --bg-arrow-hover: #f8e7d1;
+    --color-bt-foter: #bec0c1;
+    --color-ft-border: #757a7d;
+    --fontawesome-family6: "Font Awesome 6 Free";
+    --heading-font-mar: "Marcellus", serif;
+    --p-font-poppins: "Poppins", sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--heading-font-mar);
+}
+
+h1 {
+    font-size: 57px;
+}
+
+h2 {
+    font-size: 47px;
+}
+
+p {
+    font-family: var(--p-font-poppins);
+    font-size: 19px;
+}
+
+img {
+    width: 100%;
+}
+
+.contener {
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--p-font-poppins);
+    color: var(--rev-wh-color);
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.btn a {
+    background-color: var(--rev-a-bg);
+    color: var(--rev-wh-color);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-family: var(--p-font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn a::after {
+    content: "\f178";
+    font-weight: 800;
+    font-family: var(--fontawesome-family6);
+    padding: 15px 5px 15px 10px;
+}
+
+.img-common {
+    padding-top: 12px;
+    max-width: 200px;
+}
+
+/* -------------------------------------------------- Header ----------------------------------------------- */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 100;
+}
+
+.nav-bar .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav-bar .contener div:first-child img {
+    max-width: 100px;
+}
+
+.nav-bar .moniter nav ul:first-child {
+    display: flex;
+    column-gap: 18px;
+
+}
+
+.nav-bar .moniter nav ul li a {
+    font-size: 13px;
+}
+
+.nav-bar nav ul li:nth-child(3)::after {
+    content: "\f078";
+    font-weight: 900;
+    padding-left: 5px;
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: var(--rev-wh-color);
+    cursor: pointer;
+}
+
+.nav-bar nav ul li:nth-child(3) {
+    position: relative;
+}
+
+.nav-bar nav .extra {
+    display: none;
+}
+
+.nav-bar nav ul li:nth-child(3):hover .extra {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    row-gap: 1px;
+    left: -12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar nav .extra a {
+    padding: 12px 25px;
+    color: var(--rev-bl-color);
+    background-color: var(--rev-wh-color);
+}
+
+.nav-bar .mobile {
+    display: none;
+}
+
+.nav-bar .mobile nav ul li {
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--rev-wh-color);
+}
+
+.nav-bar .mobile nav li:nth-child(3):hover .extra {
+    max-width: 250px;
+    top: 72px;
+    left: 12px;
+}
+
+.nav-bar .mobile nav .extra a {
+    padding: 12px 15px;
+}
+
+.nav-bar nav ul li a:hover {
+    color: var(--text-color-y);
+}
+
+/* -------------------------------------------------- Header ----------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------- Footer ------------------------------------------------ */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--rev-foo-ter);
+    color: var(--rev-wh-color);
+    padding: 350px 15px 100px;
+    margin-top: -300px;
+}
+
+#footer .contener {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#footer .anker ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 95px;
+    padding: 20px 0px;
+
+
+}
+
+#footer .anker ul li:hover a {
+    color: var(--text-color-y);
+}
+
+#footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 20px;
+    border-top: 1px solid var(--color-ft-border);
+    border-bottom: 1px solid var(--color-ft-border);
+}
+
+#footer .first .location {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 0px 16px;
+
+}
+
+#footer .first .location img {
+    max-width: 60px;
+}
+
+#footer .first .media {
+    display: flex;
+    column-gap: 8px;
+}
+
+#footer .first .media img {
+    max-width: 55px;
+}
+
+#footer .middle {
+    margin: 45px;
+    padding: 65px;
+    border-left: 1px solid var(--color-ft-border);
+    border-right: 1px solid var(--color-ft-border);
+}
+
+#footer .middle img {
+    max-width: 170px;
+}
+
+#footer .last img {
+    max-width: 60px;
+
+}
+
+#footer .last .fst,
+#footer .last .lst {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 16px;
+}
+
+#footer .last .fst a {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#footer .last .lst a {
+    word-wrap: anywhere;
+}
+
+#footer .bottom {
+    text-align: center;
+}
+
+#footer .bottom p:first-child {
+    margin-bottom: 30px;
+}
+
+#footer .bottom p:first-child {
+    color: var(--color-bt-foter);
+}
+
+/* ------------------------------------------------- Footer ------------------------------------------------ */
+
+
+
+
+
+
+/* -------------------------------------------------- Home -------------------------------------------------- */
+/* ---------------------------------------------- Daughtter ---------------------------------------------- */
+
+#daughter {
+    background-image: url('../image/top-img.jpg');
+}
+
+.daug-hter {
+    display: flex;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    object-fit: cover;
+    height: 95vh;
+    position: relative;
+
+
+}
+
+.daug-hter::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 44%);
+}
+
+.daug-hter .contener {
+    color: var(--rev-wh-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+    padding: 0px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.daug-hter .contener .pra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.daug-hter .contener p {
+    font-size: 24px;
+}
+
+.daug-hter .img-button {
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+
+}
+
+/* ---------------------------------------------- Daughtter ---------------------------------------------- */
+
+/* -------------------------------------------- Appointment ---------------------------------------------- */
+
+.appoint-ment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: -51px;
+}
+
+.appoint-ment .contener {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 15px;
+    row-gap: 10px;
+
+}
+
+.appoint-ment .contener h2 b {
+    color: var(--text-color-y);
+}
+
+.appoint-ment .contener p {
+    font-size: 24px;
+}
+
+
+
+/* --------------------------------------------- Appointment ----------------------------------------------- */
+
+
+/* ------------------------------------------------ About -------------------------------------------------- */
+
+.ab-out {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 15px 80px;
+    background-color: var(--rev-bg-sec-2);
+    position: relative;
+}
+
+.ab-out .contener {
+    display: flex;
+    column-gap: 15px;
+}
+
+.ab-out .contener .circle {
+    width: 50%;
+    position: relative;
+}
+
+.ab-out .contener .circle img {
+    max-width: 470px;
+}
+
+.ab-out .contener .circle img:first-child {
+    max-width: 250px;
+    position: relative;
+    top: 67px;
+}
+
+.ab-out .contener .circle img:nth-child(2) {
+    position: relative;
+    top: -88px;
+    left: 56px;
+}
+
+.ab-out .contener .circle img:last-child {
+    position: absolute;
+    left: 63px;
+    top: 149px;
+        border-radius: 50%;
+    aspect-ratio: 1 / 1;
+
+}
+
+.ab-out .contener .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.ab-out .contener .text p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------ About -------------------------------------------------- */
+
+
+/* ---------------------------------------------- Prophetic ------------------------------------------------ */
+
+#prophetic {
+    background-image: url('../image/prophetic.jpg');
+}
+
+.pro-phetic {
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px;
+    height: 85vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 55;
+}
+
+#prophetic::before {
+    content: " ";
+    background-color: #090202;
+    background: linear-gradient(90deg, rgba(9, 2, 2, 0.7) 30%, rgb(254, 255, 253, 0) 70%);
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.pro-phetic .contener {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    color: var(--rev-wh-color);
+    position: relative;
+    z-index: 55;
+
+}
+
+.pro-phetic .contener img {
+    filter: brightness(0) invert(1);
+}
+
+.pro-phetic .contener p {
+    margin-top: 15px;
+    width: 440px;
+}
+
+/* ---------------------------------------------- Prophetic ------------------------------------------------ */
+
+
+/* ------------------------------------------------- Daily ------------------------------------------------- */
+
+.da-ily {
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px;
+}
+
+.da-ily .contener {
+    text-align: center;
+}
+
+
+.da-ily .content {
+    display: flex;
+    width: 100%;
+    padding-top: 55px;
+    column-gap: 100px;
+}
+
+.da-ily .image {
+    width: 50%;
+    position: relative;
+
+}
+
+.da-ily .image .similer {
+    max-width: 210px;
+    position: absolute;
+    top: -47px;
+    left: -47px;
+
+}
+
+.da-ily figure {
+    width: 50%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    column-gap: 30px;
+    position: relative;
+}
+
+.da-ily .image figure img:first-child {
+    object-position: 26% center;
+    border-radius: 200px 13px 13px;
+    object-fit: cover;
+}
+
+.da-ily .image figure img:last-child {
+    object-position: 65% center;
+    border-radius: 13px 13px 200px;
+    object-fit: cover;
+}
+
+.da-ily .text {
+    width: 50%;
+    text-align: left;
+}
+
+
+/* ------------------------------------------------- Daily ------------------------------------------------- */
+
+
+
+/* ----------------------------------------------- Teching ------------------------------------------------- */
+
+.te-ching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-tech);
+    padding: 100px 15px;
+    margin-top: -145px;
+}
+
+.te-ching .contener {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    width: 100%;
+}
+
+.te-ching .text {
+    text-align: center;
+}
+
+.te-ching .text p {
+    padding-top: 30px;
+}
+
+/* Wrapper to clip overflow properly for infinite loop */
+.slider-wrapper {
+    width: 100%;
+    max-width: 1010px;
+    overflow: hidden;
+    position: relative;
+}
+
+.te-ching .slider {
+    display: flex;
+    column-gap: 24px;
+    width: max-content;
+    will-change: transform;
+}
+
+/* Slider Container Component */
+.rev-slider-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    user-select: none;
+}
+
+.rev-slider-box.rev-is-grabbing {
+    cursor: grabbing;
+}
+
+.rev-arrow {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c9c9b3;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    background-color: var(--rev-wh-color);
+    transition: background-color 0.2s ease;
+}
+
+.rev-arrow:hover {
+    background-color: var(--bg-arrow-hover);
+}
+
+.rev-arrow svg {
+    width: 30px;
+    height: 30px;
+    fill: #8c8c7d;
+}
+
+.rev-arrow.rev-prev {
+    left: 0px;
+}
+
+.rev-arrow.rev-next {
+    right: 0px;
+}
+
+.rev-item {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    width: 320px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.rev-item * {
+    pointer-events: none;
+}
+
+.te-ching .circle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rev-wh-color);
+    border-radius: 50%;
+    width: 100%;
+    max-width: 285px;
+    padding: 30px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.te-ching .circle:hover {
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+}
+
+/* Active Center Highlight Style (matches your design image) */
+.te-ching .rev-item.rev-center-active .circle {
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+}
+
+.te-ching .circle img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    transition: filter 0.4s ease;
+}
+
+.te-ching .circle p {
+    font-weight: 600;
+}
+
+.te-ching .circle:hover img,
+.te-ching .rev-item.rev-center-active .circle img {
+    filter: brightness(0) invert(1);
+}
+
+.te-ching .btn {
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------- Teching ------------------------------------------------- */
+
+
+/* -------------------------------------------------- Join ------------------------------------------------- */
+
+#jion {
+    background-color: var(--bg-color-tech);
+}
+
+.jo-in {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+#bg-image {
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/join.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    border-radius: 15px;
+}
+
+#bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 44%);
+    border-radius: 15px;
+}
+
+.jo-in .contener {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+    color: var(--rev-wh-color);
+    position: relative;
+    z-index: 5;
+}
+
+/* -------------------------------------------------- Join ------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- Home -------------------------------------------------- */
+
+
+
+/* ----------------------------------------------- About-Us ------------------------------------------------ */
+/* ------------------------------------------------ Scribe ----------------------------------------------- */
+
+#about-us {
+    background-image: url('../image/top-img.jpg');
+}
+
+/* ------------------------------------------------ Scribe ----------------------------------------------- */
+
+
+/* ------------------------------------------------ Divine ----------------------------------------------- */
+#divine {
+    background-color: var(--rev-wh-color);
+}
+
+/* ------------------------------------------------ Divine ----------------------------------------------- */
+
+
+/* ----------------------------------------------- Journey ---------------------------------------------- */
+.jour-ney {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15px;
+    background-color: var(--rev-bg-sec-2);
+}
+
+.jour-ney .contener {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.jour-ney .contener div:first-child div {
+    text-align: center;
+}
+
+.jour-ney .contener .text {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.jour-ney .contener .text p {
+    width: 50%;
+}
+
+.jour-ney .contener .text div {
+    width: 50%;
+    border-radius: 0px 200px;
+}
+
+.jour-ney .contener .text div img {
+    border-radius: 5px 200px;
+}
+
+/* ----------------------------------------------- Journey ---------------------------------------------- */
+
+
+/* --------------------------------------------- Stewardship --------------------------------------------- */
+
+#stewardship {
+    background-image: url('../image/scrolls.jpg');
+    padding: 80px 15px 130px;
+    z-index: 99;
+    position: relative;
+}
+
+#stewardship::before {
+    content: " ";
+    background-color: #000000;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.7) 60%);
+    background-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#stewardship .contener {
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#stewardship .contener p {
+    width: 100%;
+}
+
+/* --------------------------------------------- Stewardship --------------------------------------------- */
+
+
+/* ----------------------------------------------- Mission ----------------------------------------------- */
+
+#mission {
+    background-color: var(--rev-wh-color);
+}
+
+/* ----------------------------------------------- Mission ----------------------------------------------- */
+
+
+/* ----------------------------------------------- May-you ----------------------------------------------- */
+
+#bg-1-image {
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/befor-footer.png');
+    background-position: top;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 99;
+}
+
+#bg-1-image::before {
+    content: " ";
+    background-color: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 25%, rgba(255, 255, 255, 0) 100%);
+    background-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* ----------------------------------------------- May-you ----------------------------------------------- */
+/* ----------------------------------------------- About-Us -----------------------------=------------------ */
+
+
+
+
+/* ------------------------------------------- Prophetic-Scrolls -------------------------------------------- */
+
+/* ----------------------------------------------- scroll ----------------------------------------------- */
+
+#pro-scroll {
+    background-image: url('../image/top-img.jpg');
+}
+
+/* ----------------------------------------------- scroll ----------------------------------------------- */
+
+/* --------------------------------------------- Pro-Abour --------------------------------------------- */
+
+#pro-about {
+    background-color: var(--text-color-y);
+}
+
+#pro-about .contener {
+    color: var(--rev-wh-color);
+}
+
+#pro-about .contener .circle-1 {
+    width: 50%;
+    position: relative;
+}
+
+#pro-about .contener .circle-1 img:first-child {
+    max-width: 250px;
+    position: relative;
+    top: 67px;
+}
+
+#pro-about .contener .circle-1 img:last-child {
+    border-radius: 145px 0px;
+    position: relative;
+    width: 85%;
+    top: -88px;
+    left: 56px;
+}
+
+#pro-about .contener .text img {
+    filter: brightness(0) invert(1);
+}
+
+/* --------------------------------------------- Pro-Abour --------------------------------------------- */
+
+/* --------------------------------------------- Unmasking --------------------------------------------- */
+
+#unmasking {
+    background-color: var(--rev-wh-color);
+}
+
+#unmasking .contener {
+    flex-direction: column;
+}
+
+#unmasking .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+#unmasking .btn{
+    margin-top: 0px;
+}
+
+/* ---------------------------------------------- Unmasking ---------------------------------------------- */
+
+
+/* ----------------------------------------------- Archives ----------------------------------------------- */
+
+.ar-chive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15px;
+    background-color: var(--bg-arrow-hover);
+}
+.ar-chive .contener{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+.ar-chive .ar-head{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.ar-chive .ar-head img{
+    filter: brightness(0) invert(0);
+}
+.ar-chive .box{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 135px 10px 10px;
+    column-gap: 30px;
+    background-color: var(--rev-wh-color);
+}
+#box-right{
+    border-radius: 10px 135px 10px 10px;
+}
+.ar-chive .first{
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+.ar-chive .first img{
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+.ar-chive .heading{
+    display: flex;
+    column-gap: 20px;
+}
+.ar-chive .heading img{
+    max-width: 60px;
+}
+.ar-chive .heading p:first-child{
+    color: var(--text-color-y);
+    margin-bottom: 10px;
+}
+.ar-chive .heading p:last-child{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------------- Archives ----------------------------------------------- */
+
+/* ----------------------------------------------- Reciving ----------------------------------------------- */
+
+#reciving{
+    background-image: url('../image/pg-3-instruction.jpg');
+}
+#reciving::before{
+    content: " ";
+    background-color:  #090202;
+    background: linear-gradient(90deg, rgba(9, 2, 2, 0.8) 30%, rgb(254, 255, 253, 0) 70%);
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------------- Reciving ----------------------------------------------- */
+
+
+/* ----------------------------------------------- Downloade ----------------------------------------------- */
+
+.down-loade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15px;
+}
+.down-loade .contener{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* ----------------------------------------------- Downloade ----------------------------------------------- */
+
+
+/* --------------------------------------------------- May-these-------------------------------------------- */
+
+#may-these{
+    background-color: var(--rev-wh-color);
+}
+
+#bg-2-image{
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/pg-3-be-footer.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 99;
+    
+}
+#bg-2-image::before{
+    content: " ";
+    background-color: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 25%, rgba(255, 255, 255, 0) 100%);
+    background-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* --------------------------------------------------- May-these-------------------------------------------- */
+/* ------------------------------------------ Prophetic-Scrolls ------------------------------------------- */
+
+
+
+
+/* ------------------------------------------ Decrees and prayers ----------------------------------------- */
+/* ---------------------------------------------- Decrees ---------------------------------------------- */
+
+#decrees{
+    background-image: url('../image/pg-4-top.jpg');
+}
+
+#decrees::after{
+        background-color: rgba(0, 0, 0, 0%);
+
+}
+
+/* ---------------------------------------------- Decrees ---------------------------------------------- */
+
+
+/* ---------------------------------------------- Authority ---------------------------------------------- */
+
+#authority{
+    background-color: var(--rev-wh-color);
+}
+#authority .contener{
+    flex-direction: column;
+}
+#authority .head{
+    text-align: center;
+}
+#authority .contener .content{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#authority .container {
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#authority .text {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+}
+
+#authority .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#authority .accordion-header.active {
+    color: #b8973b; /* Gold/Brown shade from image */
+}
+
+#authority .accordion-header.inactive {
+    color: #000;
+}
+
+#authority .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+#authority .pra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 0;
+}
+
+#authority .pra.open {
+    max-height: 300px;
+    padding-top: 15px;
+}
+
+#authority .pra p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------- Authority ---------------------------------------------- */
+/* ------------------------------------------ Decrees and prayers ----------------------------------------- */
+
+
