@@ -1249,6 +1249,7 @@ li {
 .pra-yers .contener{
     display: flex;
     flex-direction: column;
+    row-gap: 55px;
 }
 .pra-yers .head{
     text-align: center;
