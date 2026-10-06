@@ -202,20 +202,23 @@ setTimeout(() => {
 //  -------------------------------------------- Decrees and prayers -------------------------------------------
 //  ------------------------------------------------ Authority ------------------------------------------------
 function toggleAccordion(header) {
-    const pra = header.nextElementSibling;
-    const arrow = header.querySelector('.arrow');
+    const currentPra = header.nextElementSibling;
+    const isAlreadyOpen = currentPra.classList.contains('open');
+
+    // 1. Sabhi sections ko band kar do aur inactive classes set karo
+    const allPras = document.querySelectorAll('.pra');
+    const allHeaders = document.querySelectorAll('.accordion-header');
     
-    // Toggle open class
-    pra.classList.toggle('open');
-    
-    if (pra.classList.contains('open')) {
-        arrow.innerHTML = '&#9650;'; // Up arrow
+    allPras.forEach(pra => pra.classList.remove('open'));
+    allHeaders.forEach(h => {
+        h.classList.remove('active');
+        h.classList.add('inactive');
+    });
+
+    // 2. Agar clicked section pehle se open nahi tha, toh use open karo
+    if (!isAlreadyOpen) {
+        currentPra.classList.add('open');
         header.classList.remove('inactive');
         header.classList.add('active');
-    } else {
-        arrow.innerHTML = '&#9660;'; // Down arrow
-        header.classList.remove('active');
-        header.classList.add('inactive');
     }
 }
-

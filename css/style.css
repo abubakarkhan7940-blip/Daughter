@@ -616,7 +616,7 @@ li {
 }
 
 /* Wrapper to clip overflow properly for infinite loop */
-.slider-wrapper {
+.te-ching .slider-wrapper {
     width: 100%;
     max-width: 1010px;
     overflow: hidden;
@@ -631,7 +631,7 @@ li {
 }
 
 /* Slider Container Component */
-.rev-slider-box {
+.te-ching .rev-slider-box {
     position: relative;
     display: flex;
     align-items: center;
@@ -640,11 +640,11 @@ li {
     user-select: none;
 }
 
-.rev-slider-box.rev-is-grabbing {
+.te-ching .rev-slider-box.rev-is-grabbing {
     cursor: grabbing;
 }
 
-.rev-arrow {
+.te-ching .rev-arrow {
     position: absolute;
     top: 65%;
     transform: translateY(-50%);
@@ -662,25 +662,25 @@ li {
     transition: background-color 0.2s ease;
 }
 
-.rev-arrow:hover {
+.te-ching .rev-arrow:hover {
     background-color: var(--bg-arrow-hover);
 }
 
-.rev-arrow svg {
+.te-ching .rev-arrow svg {
     width: 30px;
     height: 30px;
     fill: #8c8c7d;
 }
 
-.rev-arrow.rev-prev {
+.te-ching .rev-arrow.rev-prev {
     left: 0px;
 }
 
-.rev-arrow.rev-next {
+.te-ching .rev-arrow.rev-next {
     right: 0px;
 }
 
-.rev-item {
+.te-ching .rev-item {
     position: relative;
     text-align: center;
     margin-top: 40px;
@@ -689,7 +689,7 @@ li {
     box-sizing: border-box;
 }
 
-.rev-item * {
+.te-ching .rev-item * {
     pointer-events: none;
 }
 
@@ -1171,15 +1171,12 @@ li {
 
 #authority .container {
     width: 50%;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 #authority .text {
     border-bottom: 1px solid #e0e0e0;
     padding: 15px 0;
+    width: 100%;
 }
 
 #authority .accordion-header {
@@ -1191,17 +1188,28 @@ li {
     font-weight: bold;
 }
 
+#authority .accordion-header::after {
+    content: "\f107";
+    font-family: var(--fontawesome-family6);
+    font-size: 24px;         /* Arrow ka size bada kiya gaya hai */
+    font-weight: 900;
+    color: var(--color-bt-foter);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
 #authority .accordion-header.active {
-    color: #b8973b; /* Gold/Brown shade from image */
+    color: var(--text-color-y); /* Gold/Brown shade */
 }
 
 #authority .accordion-header.inactive {
-    color: #000;
+    color: var(--rev-bl-color);
 }
 
-#authority .arrow {
-    font-size: 18px;
-    transition: transform 0.3s ease;
+/* Jab header active hoga toh pseudo-element (::after) 180 degree rotate ho jayega */
+#authority .accordion-header.active::after {
+    transform: rotate(180deg);
+    color: var(--text-color-y);
 }
 
 #authority .pra {
@@ -1222,8 +1230,73 @@ li {
     line-height: 1.6;
     font-size: 16px;
 }
-
 /* ---------------------------------------------- Authority ---------------------------------------------- */
+
+
+/* ---------------------------------------------- Prayars ----------------------------------------------- */
+
+#prayers{
+    background-image: url('../image/pg-4-prayers.jpg');
+}
+.pra-yers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 15px;
+}
+.pra-yers .contener{
+    display: flex;
+    flex-direction: column;
+}
+.pra-yers .head{
+    text-align: center;
+    color: var(--rev-wh-color);
+}
+.pra-yers .head img{
+    filter: brightness(0) invert(1);
+}
+.pra-yers .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.pra-yers .pra-slid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 5px;
+    background-color: transparent;
+    color: var(--rev-wh-color);
+}
+.pra-yers .pra-slid div:first-child{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color-y);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 230px;
+}
+.pra-yers .pra-slid div:first-child img{
+    filter: brightness(0) invert(1);
+    max-width: 100px;
+}
+.pra-yers .pra-slid div:last-child{
+    text-align: center;
+}
+.pra-yers .pra-slid div:last-child p:first-child{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------- Prayars ----------------------------------------------- */
 /* ------------------------------------------ Decrees and prayers ----------------------------------------- */
 
 
