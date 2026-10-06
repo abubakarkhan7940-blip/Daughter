@@ -21,6 +21,7 @@ body {
     --rev-foo-ter: #3a4045;
     --text-color-y: #bc8e35;
     --text-color-p: #181818;
+    --rev-color-p:   #6b6b6b;
     --bg-color-tech: #f7f7dc;
     --bg-arrow-hover: #f8e7d1;
     --color-bt-foter: #bec0c1;
@@ -220,6 +221,7 @@ li {
     justify-content: center;
     column-gap: 95px;
     padding: 20px 0px;
+    line-height: 2;
 
 
 }
@@ -1175,8 +1177,9 @@ li {
 }
 
 .autho-rity .text {
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
+    row-gap: 0px !important;
+    border-bottom: 1px solid var(--color-bt-foter);
+    padding: 20px 0;
     width: 100% !important;
 }
 
@@ -1262,7 +1265,7 @@ li {
 .pra-yers .content{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 30px;
 }
 .pra-yers .pra-slid{
@@ -1334,6 +1337,8 @@ li {
     height: 100%;
     position: absolute;
     z-index: 0;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 .calling-2copy .contener{
@@ -1343,10 +1348,103 @@ li {
 .calling-2copy .pra-slid{
     flex-direction: row;
     align-items: flex-start;
+    column-gap: 20px;
+
+}
+.calling-2copy .pra-slid div:first-child {
+    height: 180px;
+    width: 100%;
+    max-width: 180px;
+
+}
+.calling-2copy .pra-slid div:last-child{
+    text-align: left;
+}
+.calling-2copy .pra-slid p{
+    line-height: 1.6;
 }
 
 
 /* ----------------------------------------------- Calling ----------------------------------------------- */
+
+
+/* ----------------------------------------------- Insight ----------------------------------------------- */
+
+#insight{
+    background-image: url('../image/pg-5-sec-4.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding-bottom: 315px;
+    color: var(--rev-bl-color);
+
+}
+#insight::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 247, 220, 0.8);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#insight .pra-slid, #insight .head{
+    color: var(--rev-bl-color);
+}
+#insight .head img{
+    filter: brightness(0) invert(0);
+}
+
+/* ----------------------------------------------- Insight ----------------------------------------------- */
+
+
+/* ---------------------------------------------- Healing ---------------------------------------------- */
+
+#healing{
+    background-color: var(--rev-wh-color);
+}
+#healing .contener{
+    flex-direction: column;
+    row-gap: 60px;
+}
+#healing .head{
+    text-align: center;
+}
+#healing .content{
+    display: flex;
+}
+#healing .content div{
+    width: 100%;
+}
+#healing .content div p:first-child{
+    font-weight: 800;
+}
+#healing .content div p:last-child{
+    color: var(--rev-color-p);
+}
+#healing .middle{
+    position: relative;
+    margin: 0px 25px 0px 10px;
+}
+#healing .middle img:last-child{
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: -15px;
+    left: 4px;
+}
+
+/* ---------------------------------------------- Healing ---------------------------------------------- */
+
+
+/* --------------------------------------------- Discernment -------------------------------------------- */
+#discernment .head img{
+    filter: brightness(0) invert(0);
+}
+
+/* --------------------------------------------- Discernment -------------------------------------------- */
 /* ----------------------------------------- Teching and Revelation ---------------------------------------- */
 
 
