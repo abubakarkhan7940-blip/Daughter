@@ -484,15 +484,15 @@
     /* ------------------------------------------ Decrees and prayers ----------------------------------------- */
     /* ---------------------------------------------- Authority ---------------------------------------------- */
 
-    #authority {
+    .autho-rity {
         padding: 60px 25px;
     }
 
-    #authority .contener .content {
+    .autho-rity .contener .content {
         flex-direction: column;
     }
 
-    #authority .container {
+    .autho-rity .container {
         width: 100%;
     }
 
@@ -501,6 +501,9 @@
 
     /* ---------------------------------------------- Prayars ----------------------------------------------- */
 
+    .pra-yers{
+        padding: 60px 15px;
+    }
     .pra-yers .pra-slid {
         flex: 0 0 calc(100%);
     }

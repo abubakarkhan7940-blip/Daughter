@@ -22,7 +22,7 @@ class SiteHeader extends HTMLElement{
                     </ul>
                     </li>
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
-                    <li><a href="">Teachings & Revelations</a></li>
+                    <li><a href="revelations.html">Teachings & Revelations</a></li>
                     <li><a href="">The Remnant Community</a></li>
                     <li><a href="">Contact</a></li>
                     </ul>

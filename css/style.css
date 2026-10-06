@@ -446,10 +446,11 @@ li {
 }
 
 .ab-out .contener .circle img:last-child {
+    object-fit: cover;
     position: absolute;
     left: 63px;
     top: 149px;
-        border-radius: 50%;
+    border-radius: 50%;
     aspect-ratio: 1 / 1;
 
 }
@@ -1157,29 +1158,29 @@ li {
 #authority{
     background-color: var(--rev-wh-color);
 }
-#authority .contener{
+.autho-rity .contener{
     flex-direction: column;
 }
-#authority .head{
+.autho-rity .head{
     text-align: center;
 }
-#authority .contener .content{
+.autho-rity .contener .content{
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
 
-#authority .container {
+.autho-rity .container {
     width: 50%;
 }
 
-#authority .text {
+.autho-rity .text {
     border-bottom: 1px solid #e0e0e0;
     padding: 15px 0;
-    width: 100%;
+    width: 100% !important;
 }
 
-#authority .accordion-header {
+.autho-rity .accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1188,7 +1189,7 @@ li {
     font-weight: bold;
 }
 
-#authority .accordion-header::after {
+.autho-rity .accordion-header::after {
     content: "\f107";
     font-family: var(--fontawesome-family6);
     font-size: 24px;         /* Arrow ka size bada kiya gaya hai */
@@ -1198,33 +1199,33 @@ li {
     transition: transform 0.3s ease;
 }
 
-#authority .accordion-header.active {
+.autho-rity .accordion-header.active {
     color: var(--text-color-y); /* Gold/Brown shade */
 }
 
-#authority .accordion-header.inactive {
+.autho-rity .accordion-header.inactive {
     color: var(--rev-bl-color);
 }
 
 /* Jab header active hoga toh pseudo-element (::after) 180 degree rotate ho jayega */
-#authority .accordion-header.active::after {
+.autho-rity .accordion-header.active::after {
     transform: rotate(180deg);
     color: var(--text-color-y);
 }
 
-#authority .pra {
+.autho-rity .pra {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0 0;
 }
 
-#authority .pra.open {
+.autho-rity .pra.open {
     max-height: 300px;
     padding-top: 15px;
 }
 
-#authority .pra p {
+.autho-rity .pra p {
     margin: 0;
     color: #333;
     line-height: 1.6;
@@ -1298,6 +1299,54 @@ li {
 }
 
 /* ---------------------------------------------- Prayars ----------------------------------------------- */
-/* ------------------------------------------ Decrees and prayers ----------------------------------------- */
+
+
+/* ---------------------------------------------- Identity ---------------------------------------------- */
+
+#identity{
+    background-color: var(--rev-wh-color);
+}
+
+/* ---------------------------------------------- Identity ---------------------------------------------- */
+/* ------------------------------------------ Decrees and prayers ------------------------------------------ */
+
+
+
+/* ----------------------------------------- Teching and Revelation ---------------------------------------- */
+/* --------------------------------------------- Revelations --------------------------------------------- */
+
+#revolations{
+    background-image: url('../image/pg-5-top.jpg');
+}
+
+/* --------------------------------------------- Revelations --------------------------------------------- */
+
+
+/* ----------------------------------------------- Calling ----------------------------------------------- */
+
+#calling{
+    background-image: url('../image/pg-5-sec-3.jpg');
+    position: relative;
+}
+#calling::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.calling-2copy .contener{
+    position: relative;
+    z-index: 1;
+}
+.calling-2copy .pra-slid{
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+/* ----------------------------------------------- Calling ----------------------------------------------- */
+/* ----------------------------------------- Teching and Revelation ---------------------------------------- */
 
 
