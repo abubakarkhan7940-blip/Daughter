@@ -24,7 +24,7 @@ class SiteHeader extends HTMLElement{
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
                     <li><a href="revelations.html">Teachings & Revelations</a></li>
                     <li><a href="community.html">The Remnant Community</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,11 +50,11 @@ class SiteFooter extends HTMLElement{
             <div class="anker">
                 <ul>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="">SCROLLS</a></li>
-                    <li><a href="">DECREES</a></li>
-                    <li><a href="">TEACHINGS</a></li>
-                    <li><a href="">COMMUNITY</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="scrolls.html">SCROLLS</a></li>
+                    <li><a href="decrees.html">DECREES</a></li>
+                    <li><a href="revelations.html">TEACHINGS</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div class="content">
