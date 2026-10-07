@@ -1459,7 +1459,16 @@ li {
 
 
 
-/* ---------------------------------------=-- The-remnant-community ---------------------------------------- */
+/* ----------------------------------------- The-remnant-community ---------------------------------------- */
+
+#purpose ul li, #remnant ul li, #resources ul li{
+    list-style: disc;
+    font-size: 23px;
+}
+#purpose ul , #remnant ul , #resources ul {
+    padding-left: 15px;
+}
+
 /* ---------------------------------------------- Community ---------------------------------------------- */
 
 #community{
@@ -1489,23 +1498,20 @@ li {
     object-fit: cover;
 }
 
-#purpose .contener .text .pra{
+#purpose .contener .text .pra ul{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-#purpose .contener .text p{
+#purpose .contener .text li{
     width: 100%;
 }
-/* #purpose .contener .text .pra p::before{
-    content: "\f111";
-    font-weight: 900;
-    padding-right: 5px;
-    font-family: var(--fontawesome-family6);
-} */
 
 /* ----------------------------------------------- Purpose ----------------------------------------------- */
+
+
+/* ----------------------------------------------- Remnant ----------------------------------------------- */
 
 #remnant{
     background-image: url('../image/pg-6-sec-4.jpg');
@@ -1526,9 +1532,12 @@ li {
     align-items: end;
 }
 
-#remnant .contener div:first-child{
+#remnant .contener ul{
     width: 100%;
     max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 #remnant .contener .p-only{
@@ -1557,7 +1566,7 @@ li {
     display: flex;
     column-gap: 50px;
 }
-.re-sources .content div {
+.re-sources .content div ul{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
