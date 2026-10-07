@@ -15,15 +15,15 @@ class SiteHeader extends HTMLElement{
                     <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="scrolls.html">Prophetic Scrolls</a>
+                    <li><a href="">Prophetic Scrolls</a>
                     <ul class="extra">
-                        <a href="">Proohetic Scrolls</a>
+                        <a href="scrolls.html">Proohetic Scrolls</a>
                         <a href="">Scroll Archives</a>
                     </ul>
                     </li>
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
                     <li><a href="revelations.html">Teachings & Revelations</a></li>
-                    <li><a href="">The Remnant Community</a></li>
+                    <li><a href="community.html">The Remnant Community</a></li>
                     <li><a href="">Contact</a></li>
                     </ul>
                 </nav>

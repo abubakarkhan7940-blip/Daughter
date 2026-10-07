@@ -493,7 +493,7 @@ li {
 
 #prophetic::before {
     content: " ";
-    background-color: #090202;
+    background-color: var(--rev-bl-color);
     background: linear-gradient(90deg, rgba(9, 2, 2, 0.7) 30%, rgb(254, 255, 253, 0) 70%);
     background-position: left;
     position: absolute;
@@ -758,9 +758,14 @@ li {
 }
 
 #bg-image {
+    
+    background-image: url('../image/join.jpg');
+   
+}
+
+.bg-img{
     display: flex;
     justify-content: center;
-    background-image: url('../image/join.jpg');
     background-size: cover;
     background-position: bottom center;
     height: 90vh;
@@ -853,7 +858,7 @@ li {
 }
 
 .jour-ney .contener .text div img {
-    border-radius: 5px 200px;
+    border-radius: 5px 130px;
 }
 
 /* ----------------------------------------------- Journey ---------------------------------------------- */
@@ -1446,5 +1451,147 @@ li {
 
 /* --------------------------------------------- Discernment -------------------------------------------- */
 /* ----------------------------------------- Teching and Revelation ---------------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------------=-- The-remnant-community ---------------------------------------- */
+/* ---------------------------------------------- Community ---------------------------------------------- */
+
+#community{
+    background-image: url('../image/pg-6-top.jpg');
+}
+
+/* ---------------------------------------------- Community ---------------------------------------------- */
+
+
+/* ---------------------------------------------- Who-We-Are --------------------------------------------- */
+
+#who{
+    background-color: var(--rev-wh-color);
+}
+
+/* ---------------------------------------------- Who-We-Are --------------------------------------------- */
+
+
+/* ----------------------------------------------- Purpose ----------------------------------------------- */
+
+#purpose{
+    background-color: var(--rev-wh-color);
+}
+
+#purpose .contener .text div img{
+    height: 490px;
+    object-fit: cover;
+}
+
+#purpose .contener .text .pra{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#purpose .contener .text p{
+    width: 100%;
+}
+/* #purpose .contener .text .pra p::before{
+    content: "\f111";
+    font-weight: 900;
+    padding-right: 5px;
+    font-family: var(--fontawesome-family6);
+} */
+
+/* ----------------------------------------------- Purpose ----------------------------------------------- */
+
+#remnant{
+    background-image: url('../image/pg-6-sec-4.jpg');
+}
+#remnant::before{
+    content: " ";
+    background-color: var(--rev-bl-color);
+    background: linear-gradient(90deg, rgb(254, 255, 253, 0) 20%, rgba(9, 2, 2, 0.7) 70%);
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+#remnant .contener{
+    align-items: end;
+}
+
+#remnant .contener div:first-child{
+    width: 100%;
+    max-width: 445px;
+}
+
+#remnant .contener .p-only{
+    font-weight: 700;
+}
+
+/* ----------------------------------------------- Remnant ----------------------------------------------- */
+
+
+/* ---------------------------------------------- Resources ---------------------------------------------- */
+
+.re-sources{
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px;
+}
+.re-sources .contener{
+    display: flex;
+    flex-direction: column;
+}
+.re-sources .contener .head{
+    text-align: center;
+}
+.re-sources .content{
+    margin-top: 50px;
+    display: flex;
+    column-gap: 50px;
+}
+.re-sources .content div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* ---------------------------------------------- Resources ---------------------------------------------- */
+
+
+/* ------------------------------------------------ Chosen ----------------------------------------------- */
+
+#bg-image-chosen{
+    background-image: url('../image/pg-6-bottom.jpg');
+}
+
+#bg-image-chosen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 44%);
+    border-radius: 15px;
+}
+#chosen .contener .header img{
+    filter: brightness(0) invert(1);
+}
+#chosen .contener div:last-child{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+/* ------------------------------------------------ Chosen ----------------------------------------------- */
+/* ---------------------------------------=-- The-remnant-community ---------------------------------------- */
+
 
 
