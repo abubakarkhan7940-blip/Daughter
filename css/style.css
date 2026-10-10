@@ -137,7 +137,7 @@ li {
     font-size: 13px;
 }
 
-.nav-bar nav ul li:nth-child(3)::after {
+.nav-bar .moniter nav ul li:nth-child(3)::after {
     content: "\f078";
     font-weight: 900;
     padding-left: 5px;
@@ -171,13 +171,16 @@ li {
     background-color: var(--rev-wh-color);
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .nav-bar .mobile {
     display: none;
 }
 
 .nav-bar .mobile nav ul li {
-    padding: 20px 15px;
-    border-bottom: 1px solid var(--rev-wh-color);
+    border-bottom: 1px solid var(--rev-bl-color);
 }
 
 .nav-bar .mobile nav li:nth-child(3):hover .extra {
@@ -194,6 +197,62 @@ li {
     color: var(--text-color-y);
 }
 
+
+
+
+
+/* kmsif9igin */
+
+/* Reset list styles */
+.mobile nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Base link styling - default background is transparent */
+.mobile nav a {
+  display: block;
+  padding: 16px 20px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+/* HOVER STATE: Background color shows ONLY when hovering */
+
+/* ACTIVE STATE: Background color shows ONLY on the active line */
+
+/* Hover state specifically for the active link */
+
+/* Dropdown toggle flex alignment for arrow icon */
+.mobile nav .has-dropdown > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sub-menu styling */
+.mobile nav .mobile-dropdown {
+  display: none;
+  background-color: #ffffff;
+}
+
+.mobile nav .mobile-dropdown li:last-child{
+    border-bottom: 0;
+}
+
+.mobile nav .has-dropdown.open .mobile-dropdown {
+  display: block;
+}
+
+.mobile nav .mobile-dropdown a {
+  padding-left: 40px; /* Indents the two sublines */
+}
 /* -------------------------------------------------- Header ----------------------------------------------- */
 
 

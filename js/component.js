@@ -28,8 +28,28 @@ class SiteHeader extends HTMLElement{
                     </ul>
                 </nav>
             </div>
-            
             </div>
+            <button class="nav-toggle" id="navToggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+             <div class="mobile" id="mobileNav">
+                <nav>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Prophetic Scrolls</a>
+                    <ul class="extra">
+                        <a href="scrolls.html">Proohetic Scrolls</a>
+                        <a href="">Scroll Archives</a>
+                    </ul>
+                    </li>
+                    <li><a href="decrees.html">Decrees & Prayers</a></li>
+                    <li><a href="revelations.html">Teachings & Revelations</a></li>
+                    <li><a href="community.html">The Remnant Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> 
         </div>
     </header>
         `;

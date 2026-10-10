@@ -1,3 +1,25 @@
+
+
+// ---------------------------------------------------Header---------------------------------------------------
+
+const navToggle = document.getElementById("navToggle");
+const mobileNav = document.getElementById("mobileNav");
+const toggleIcon = navToggle.querySelector("i");
+
+navToggle.addEventListener("click", () => {
+  const isOpen = mobileNav.classList.toggle("active");
+
+  if (isOpen) {
+    toggleIcon.classList.replace("fa-bars", "fa-xmark");
+  } else {
+    toggleIcon.classList.replace("fa-xmark", "fa-bars");
+  }
+});
+
+
+
+
+
 // ---------------------------------------------------slaider---------------------------------------------------
 
 const revContainer = document.querySelector('.rev-slider-box');
@@ -222,3 +244,28 @@ function toggleAccordion(header) {
         header.classList.add('active');
     }
 }
+
+
+
+
+
+
+const dropdownToggle = document.getElementById('dropdownToggle');
+const dropdownParent = document.getElementById('dropdownParent');
+const arrowIcon = document.getElementById('arrowIcon');
+
+dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevents page jump
+    
+    // Toggle the 'open' class
+    dropdownParent.classList.toggle('open');
+    
+    // Change arrow direction based on state
+    
+    if (dropdownParent.classList.contains('open')) {
+    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+} else {
+    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+}
+});
+    

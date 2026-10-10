@@ -1,3 +1,21 @@
+
+:root {
+    --rev-wh-color: #fff;
+    --rev-bl-color: #000;
+    --rev-a-bg: #000837;
+    --rev-bg-sec-2: #f2e8d6;
+    --rev-bg-sec-4: #f7f7dc;
+    --rev-foo-ter: #3a4045;
+    --text-color-y: #bc8e35;
+    --text-color-p: #181818;
+    --rev-color-p:   #6b6b6b;
+    --bg-color-tech: #f7f7dc;
+    --bg-arrow-hover: #f8e7d1;
+    --color-bt-foter: #bec0c1;
+    --color-ft-border: #757a7d;
+    --color-fo-rm: #e5e5e540;
+}
+
 /* Laptop */
 @media(max-width:1440px) {
     /* --------------------------------------------- Daughtter ---------------------------------------------- */
@@ -120,25 +138,57 @@
     }
 
     .nav-bar .contener {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .nav-bar .moniter {
         display: none;
     }
 
-    .nav-bar .mobile {
+    .nav-toggle {
+    display: block;
+    /* Show hamburger button */
+    position: absolute;
+    right: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+  }
+
+    .mobile {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: var(--rev-wh-color);
+    width: 100%;
+    left: 0px;
+    top: 150px;
+    padding-bottom: 0px;
+    z-index: 99;
+}
+
+    .mobile.active{
         display: block;
     }
+
+    .mobile ul li a{
+    display: block;
+    color: var(--rev-bl-color);
+    padding: 15px;
+
+    &:hover {
+      background-color: var(--text-color-y);
+      color: var(--rev-wh-color) !important;
+    }
+  }
 
     .nav-bar .contener div:first-child img {
         padding: 20px 15px;
         max-width: 135px;
     }
 
-    .nav-bar .mobile nav ul li {
-        padding: 20px 15px;
-    }
 
     /* ------------------------------------------------ Header --------------------------------------------- */
 
@@ -154,16 +204,17 @@
 
     /* --------------------------------------------- Teching ----------------------------------------------- */
 
-    .slider-wrapper {
+    .te-ching .slider-wrapper {
         max-width: 662px;
     }
 
-    .te-ching .rev-item.rev-center-active .circle {
+
+    .te-ching .slider-wrapper .rev-item.rev-center-active .circle {
         background-color: var(--rev-wh-color);
         color: var(--rev-bl-color);
     }
 
-    .te-ching .rev-item.rev-center-active .circle img {
+    .te-ching .slider-wrapper .rev-item.rev-center-active .circle img {
         filter: brightness(0) invert(0);
     }
 
@@ -377,8 +428,8 @@
         padding: 60px 15px;
     }
 
-    .slider-wrapper {
-        max-width: 316px;
+    .te-ching .slider-wrapper{
+        max-width: 315px;
     }
 
     /* --------------------------------------------- Teching ----------------------------------------------- */
