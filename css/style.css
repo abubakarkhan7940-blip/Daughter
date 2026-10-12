@@ -13,20 +13,21 @@ body {
 }
 
 :root {
-    --rev-wh-color: #fff;
-    --rev-bl-color: #000;
-    --rev-a-bg: #000837;
-    --rev-bg-sec-2: #f2e8d6;
-    --rev-bg-sec-4: #f7f7dc;
-    --rev-foo-ter: #3a4045;
-    --text-color-y: #bc8e35;
-    --text-color-p: #181818;
-    --rev-color-p:   #6b6b6b;
-    --bg-color-tech: #f7f7dc;
-    --bg-arrow-hover: #f8e7d1;
-    --color-bt-foter: #bec0c1;
-    --color-ft-border: #757a7d;
-    --color-fo-rm: #e5e5e540;
+    --rev-wh-color:     #fff;
+    --rev-bl-color:     #000;
+    --rev-a-bg:         #000837;
+    --rev-bg-sec-2:     #f2e8d6;
+    --rev-bg-sec-4:     #f7f7dc;
+    --rev-foo-ter:      #3a4045;
+    --text-color-y:     #bc8e35;
+    --text-color-p:     #181818;
+    --rev-color-p:      #6b6b6b;
+    --bg-color-tech:    #f7f7dc;
+    --bg-arrow-hover:   #f8e7d1;
+    --color-bt-foter:   #bec0c1;
+    --color-ft-border:  #757a7d;
+    --color-fo-rm:      #e5e5e540;
+    --color-scroll-box: #f2e8d6;
     --fontawesome-family6: "Font Awesome 6 Free";
     --heading-font-mar: "Marcellus", serif;
     --p-font-poppins: "Poppins", sans-serif
@@ -1202,6 +1203,93 @@ li {
 
 /* --------------------------------------------------- May-these-------------------------------------------- */
 /* ------------------------------------------ Prophetic-Scrolls ------------------------------------------- */
+
+
+/* ----------------------------------------------- Scroll-Archive ------------------------------------------ */
+/* ------------------------------------------------- Archive --------------------------------------------- */
+
+#archive{
+    background-image: url('../image/pg-4-top.jpg');
+}
+
+/* ------------------------------------------------- Archive --------------------------------------------- */
+
+
+/* ----------------------------------------------- Featured --------------------------------------------- */
+
+.fea-tured{
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px;
+}
+.fea-tured .contener{
+    display: flex;
+    flex-direction: column;
+    column-gap: 25px;
+}
+.fea-tured .box{
+    padding: 25px 20px;
+    background-color: var(--color-scroll-box);
+    width: 100%;
+    border: 1px solid var(--text-color-y);
+    border-radius: 10px;
+}
+.fea-tured .first{
+    border-bottom: 1px solid var(--text-color-y);
+}
+.fea-tured .first p:first-child{
+    font-weight: 500;
+    color: var(--text-color-y);
+}
+.fea-tured .second{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+.fea-tured .second a{
+    background-color: var(--rev-wh-color);
+    border: 1px solid var(--text-color-y);
+    border-radius: 10px;
+}
+
+.fea-tured .second .pdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+    max-width: 370px;
+    padding: 15px;
+    gap: 10px;
+
+}
+.fea-tured .second .pdf .logo{
+    background-color: rgb(117, 2, 2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--rev-wh-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    min-height: 30px;
+}
+.fea-tured .second .pdf .logo-text{
+    font-weight: 600;
+    color: var(--rev-bl-color);
+    /* line-height: 1.5; */
+    font-size: 17px;
+}
+.fea-tured .second .text p:first-child{
+    font-size: 25px;
+    margin-bottom: 10px
+}
+
+/* ----------------------------------------------- Featured --------------------------------------------- */
+/* ----------------------------------------------- Scroll-Archive ------------------------------------------ */
 
 
 
