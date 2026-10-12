@@ -16,9 +16,46 @@ navToggle.addEventListener("click", () => {
   }
 });
 
+// Active Link
+const activeLinks = document.querySelectorAll('.nav-bar .moniter nav ul li a');
+
+
+activeLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});
+
+const activeMobileLinks = document.querySelectorAll('.nav-bar .mobile nav ul li a');
+
+
+activeMobileLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});
 
 
 
+// Mobile
+  const dropdownToggle = document.getElementById('dropdownToggle');
+const dropdownParent = document.getElementById('dropdownParent');
+const arrowIcon = document.getElementById('arrowIcon');
+
+dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevents page jump
+    
+    // Toggle the 'open' class
+    dropdownParent.classList.toggle('open');
+    
+    // Change arrow direction based on state
+    
+    if (dropdownParent.classList.contains('open')) {
+    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+} else {
+    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+}
+});
 
 // ---------------------------------------------------slaider---------------------------------------------------
 
@@ -222,16 +259,9 @@ setTimeout(() => {
 
 
 
-//  ---------------------------------------------- Scroll-Archive ---------------------------------------- * ---------------------------------------------- Featured -------------------------------------------- 
 
-// Highlight Active Link Automatically
-const activeLinks = document.querySelectorAll('.nav-bar nav ul li a');
 
-activeLinks.forEach(link => {
-  if (link.href === window.location.href) {
-    link.classList.add('active');
-  }
-});
+
 
 
 
@@ -264,22 +294,5 @@ function toggleAccordion(header) {
 
 
 
-const dropdownToggle = document.getElementById('dropdownToggle');
-const dropdownParent = document.getElementById('dropdownParent');
-const arrowIcon = document.getElementById('arrowIcon');
 
-dropdownToggle.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevents page jump
-    
-    // Toggle the 'open' class
-    dropdownParent.classList.toggle('open');
-    
-    // Change arrow direction based on state
-    
-    if (dropdownParent.classList.contains('open')) {
-    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
-} else {
-    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
-}
-});
     
