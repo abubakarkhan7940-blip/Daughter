@@ -224,13 +224,14 @@ setTimeout(() => {
 
 //  ---------------------------------------------- Scroll-Archive ---------------------------------------- * ---------------------------------------------- Featured -------------------------------------------- 
 
-// Active Link
-const activeLink = document.querySelectorAll('.nav-bar  nav ul li a')
+// Highlight Active Link Automatically
+const activeLinks = document.querySelectorAll('.nav-bar nav ul li a');
 
-  activeLink.forEach(link => {
-    if (link.href === window.location.href) link.classList.add('active');
-  });
-
+activeLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});
 
 
 
