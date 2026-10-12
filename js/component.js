@@ -15,10 +15,12 @@ class SiteHeader extends HTMLElement{
                     <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="">Prophetic Scrolls</a>
+                    <li><a href="#">Prophetic Scrolls</a>
                     <ul class="extra">
-                        <a href="scrolls.html">Proohetic Scrolls</a>
-                        <a href="">Scroll Archives</a>
+                    <div>
+                       <li><a href="scrolls.html">Proohetic Scrolls</a></li>
+                        <li><a href="">Scroll Archives</a></li>
+                        </div>
                     </ul>
                     </li>
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
@@ -32,24 +34,30 @@ class SiteHeader extends HTMLElement{
             <button class="nav-toggle" id="navToggle">
               <i class="fa-solid fa-bars"></i>
             </button>
-             <div class="mobile" id="mobileNav">
-                <nav>
-                    <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="">Prophetic Scrolls</a>
-                    <ul class="extra">
-                        <a href="scrolls.html">Proohetic Scrolls</a>
-                        <a href="">Scroll Archives</a>
-                    </ul>
-                    </li>
-                    <li><a href="decrees.html">Decrees & Prayers</a></li>
-                    <li><a href="revelations.html">Teachings & Revelations</a></li>
-                    <li><a href="community.html">The Remnant Community</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div> 
+      <div class="mobile" id="mobileNav">
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-dropdown" id="dropdownParent">
+                <a href="#" class="dropdown-toggle" id="dropdownToggle">
+                    Prophetic Scrolls
+                    <span class="arrow" id="arrowIcon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <ul class="mobile-dropdown">
+                    <li><a href="scrolls.html">Prophetic Scrolls</a></li>
+                    <li><a href="archives.html">Scroll Archives</a></li>
+                </ul>
+            </li>
+            <li><a href="decrees.html">Decrees & Prayers</a></li>
+            <li><a href="revelations.html">Teachings & Revelations</a></li>
+            <li><a href="community.html">The Remnant Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
         </div>
     </header>
         `;

@@ -221,6 +221,19 @@ setTimeout(() => {
 
 
 
+
+//  ---------------------------------------------- Scroll-Archive ---------------------------------------- * ---------------------------------------------- Featured -------------------------------------------- 
+
+// Active Link
+const activeLink = document.querySelectorAll('.nav-bar  nav ul li a')
+
+  activeLink.forEach(link => {
+    if (link.href === window.location.href) link.classList.add('active');
+  });
+
+
+
+
 //  -------------------------------------------- Decrees and prayers -------------------------------------------
 //  ------------------------------------------------ Authority ------------------------------------------------
 function toggleAccordion(header) {

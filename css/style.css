@@ -51,6 +51,9 @@ h1 {
 h2 {
     font-size: 40px;
 }
+h4 {
+    font-size: 30px;
+}
 
 p {
     font-family: var(--p-font-poppins);
@@ -110,7 +113,6 @@ li {
     display: flex;
     justify-content: center;
     background-color: transparent;
-
     width: 100%;
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -131,11 +133,16 @@ li {
 .nav-bar .moniter nav ul:first-child {
     display: flex;
     column-gap: 18px;
-
 }
 
 .nav-bar .moniter nav ul li a {
     font-size: 13px;
+}
+
+/* Updated to share hover & active color styles */
+.nav-bar .moniter nav ul li a:hover,
+.nav-bar .moniter nav ul li a.active {
+    color: var(--text-color-y);
 }
 
 .nav-bar .moniter nav ul li:nth-child(3)::after {
@@ -146,6 +153,7 @@ li {
     font-size: 13px;
     color: var(--rev-wh-color);
     cursor: pointer;
+    transition: all .2s linear;
 }
 
 .nav-bar nav ul li:nth-child(3) {
@@ -154,6 +162,7 @@ li {
 
 .nav-bar nav .extra {
     display: none;
+    transition: all 0.8s;
 }
 
 .nav-bar nav ul li:nth-child(3):hover .extra {
@@ -162,14 +171,26 @@ li {
     top: 30px;
     row-gap: 1px;
     left: -12px;
-    display: flex;
+    display: block;
     flex-direction: column;
+    transition: all 0.8s;
+}
+
+.nav-bar .extra li a {
+    display: inline-block;
 }
 
 .nav-bar nav .extra a {
     padding: 12px 25px;
     color: var(--rev-bl-color);
     background-color: var(--rev-wh-color);
+}
+
+/* Updated extra dropdown links to share hover & active consistency */
+.nav-bar nav .extra a:hover,
+.nav-bar nav .extra a.active {
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
 }
 
 .nav-toggle {
@@ -194,13 +215,9 @@ li {
     padding: 12px 15px;
 }
 
-.nav-bar nav ul li a:hover {
-    color: var(--text-color-y);
+.nav-bar .mobile nav .extra li {
+    display: inline-block;
 }
-
-
-
-
 
 /* kmsif9igin */
 
@@ -210,7 +227,6 @@ li {
   margin: 0;
   padding: 0;
 }
-
 
 /* Base link styling - default background is transparent */
 .mobile nav a {
@@ -224,11 +240,12 @@ li {
   transition: background-color 0.2s ease;
 }
 
-/* HOVER STATE: Background color shows ONLY when hovering */
-
-/* ACTIVE STATE: Background color shows ONLY on the active line */
-
-/* Hover state specifically for the active link */
+/* Updated mobile link hover & active consistency */
+.mobile nav a:hover,
+.nav-bar .mobile nav ul li a.active {
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+}
 
 /* Dropdown toggle flex alignment for arrow icon */
 .mobile nav .has-dropdown > a {
@@ -239,11 +256,11 @@ li {
 
 /* Sub-menu styling */
 .mobile nav .mobile-dropdown {
-  display: none;
-  background-color: #ffffff;
+    display: none;
+    background-color: #ffffff;
 }
 
-.mobile nav .mobile-dropdown li:last-child{
+.mobile nav .mobile-dropdown li:last-child {
     border-bottom: 0;
 }
 
@@ -253,6 +270,13 @@ li {
 
 .mobile nav .mobile-dropdown a {
   padding-left: 40px; /* Indents the two sublines */
+}
+
+/* Mobile dropdown sub-links hover & active parity */
+.mobile nav .mobile-dropdown a:hover,
+.mobile nav .mobile-dropdown a.active {
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
 }
 /* -------------------------------------------------- Header ----------------------------------------------- */
 
@@ -1225,7 +1249,7 @@ li {
 .fea-tured .contener{
     display: flex;
     flex-direction: column;
-    column-gap: 25px;
+    row-gap: 25px;
 }
 .fea-tured .box{
     padding: 25px 20px;
@@ -1236,14 +1260,17 @@ li {
 }
 .fea-tured .first{
     border-bottom: 1px solid var(--text-color-y);
+    padding-bottom: 15px;
 }
 .fea-tured .first p:first-child{
     font-weight: 500;
     color: var(--text-color-y);
+    margin-bottom: 3px;
 }
 .fea-tured .second{
     display: flex;
-    column-gap: 10px;
+    align-items: flex-start;
+    column-gap: 20px;
     row-gap: 10px;
     padding-top: 20px;
 }
@@ -1251,15 +1278,20 @@ li {
     background-color: var(--rev-wh-color);
     border: 1px solid var(--text-color-y);
     border-radius: 10px;
-}
+    width: 30%;
 
+}
+.fea-tured .second a:hover{
+    background-color: var(--color-scroll-box);
+}
+.fea-tured .second a:focus{
+    background-color: var(--color-scroll-box);
+}
 .fea-tured .second .pdf{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    width: 100%;
-    max-width: 370px;
     padding: 15px;
     gap: 10px;
 
@@ -1283,9 +1315,23 @@ li {
     /* line-height: 1.5; */
     font-size: 17px;
 }
+.fea-tured .second .text{
+    width: 70%;
+}
 .fea-tured .second .text p:first-child{
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 10px
+}
+
+.fea-tured .same{
+    text-align: center;
+    padding-top: 20px;
+    color: var(--text-color-y);
+}
+.fea-tured .second .contant{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
 /* ----------------------------------------------- Featured --------------------------------------------- */

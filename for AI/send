@@ -1,12 +1,22 @@
- <div class="mobile" id="mobileNav">
+ <header id="navebar" class="nav-bar">
+        <div class="contener">
+            <div>
+                <a href="index.html">
+                <img src="image/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="content">
+            <div class="moniter">
                 <nav>
                     <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="">Prophetic Scrolls</a>
-                    <ul class="mobile-dropdown">
-                        <a href="scrolls.html">Proohetic Scrolls</a>
-                        <a href="">Scroll Archives</a>
+                    <li><a href="#">Prophetic Scrolls</a>
+                    <ul class="extra">
+                    <div>
+                       <li><a href="scrolls.html">Proohetic Scrolls</a></li>
+                        <li><a href="">Scroll Archives</a></li>
+                        </div>
                     </ul>
                     </li>
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
@@ -15,7 +25,242 @@
                     <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div> 
+            </div>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+      <div class="mobile" id="mobileNav">
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-dropdown" id="dropdownParent">
+                <a href="#" class="dropdown-toggle" id="dropdownToggle">
+                    Prophetic Scrolls
+                    <span class="arrow" id="arrowIcon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <ul class="mobile-dropdown">
+                    <li><a href="scrolls.html">Prophetic Scrolls</a></li>
+                    <li><a href="archives.html">Scroll Archives</a></li>
+                </ul>
+            </li>
+            <li><a href="decrees.html">Decrees & Prayers</a></li>
+            <li><a href="revelations.html">Teachings & Revelations</a></li>
+            <li><a href="community.html">The Remnant Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+        </div>
+    </header>
 
 
-            do this like a image 
+
+
+    .nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 100;
+}
+
+.nav-bar .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav-bar .contener div:first-child img {
+    max-width: 100px;
+}
+
+.nav-bar .moniter nav ul:first-child {
+    display: flex;
+    column-gap: 18px;
+
+}
+
+.nav-bar .moniter nav ul li a {
+    font-size: 13px;
+}
+.nav-bar .moniter nav ul li a.active{
+    color: var(--text-color-y);
+}
+
+.nav-bar .moniter nav ul li:nth-child(3)::after {
+    content: "\f078";
+    font-weight: 900;
+    padding-left: 5px;
+    font-family: "Font Awesome 6 Free";
+    font-size: 13px;
+    color: var(--rev-wh-color);
+    cursor: pointer;
+        transition: all .2s linear;
+
+}
+
+.nav-bar nav ul li:nth-child(3){
+    position: relative;
+}
+
+.nav-bar nav .extra {
+    display: none;
+    transition: all 0.8s;
+}
+
+.nav-bar nav ul li:nth-child(3):hover .extra {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    row-gap: 1px;
+    left: -12px;
+    display: block;
+    flex-direction: column;
+    transition: all 0.8s ;
+
+}
+
+.nav-bar .extra li a {
+    display: inline-block;
+}
+
+.nav-bar nav .extra a {
+    padding: 12px 25px;
+    color: var(--rev-bl-color);
+    background-color: var(--rev-wh-color);
+}
+.nav-bar nav .extra a:hover{
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+}
+
+.nav-bar nav .extra a.active{
+    background-color: var(--text-color-y);
+    color: var(--rev-wh-color);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-bar .mobile {
+    display: none;
+}
+
+.nav-bar .mobile nav ul li {
+    border-bottom: 1px solid var(--rev-bl-color);
+}
+.nav-bar .mobile nav ul li a.active{
+   background-color: var(--text-color-y);
+    color: var(--rev-wh-color);;
+}
+
+.nav-bar .mobile nav li:nth-child(3):hover .extra {
+    max-width: 250px;
+    top: 72px;
+    left: 12px;
+}
+
+.nav-bar .mobile nav .extra a {
+    padding: 12px 15px;
+}
+
+.nav-bar .mobile nav .extra li{
+    display: inline-block;
+}
+
+.nav-bar nav ul li a:hover {
+    color: var(--text-color-y);
+}
+
+
+
+
+
+/* kmsif9igin */
+
+/* Reset list styles */
+.mobile nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Base link styling - default background is transparent */
+.mobile nav a {
+  display: block;
+  padding: 16px 20px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+/* HOVER STATE: Background color shows ONLY when hovering */
+
+/* ACTIVE STATE: Background color shows ONLY on the active line */
+
+/* Hover state specifically for the active link */
+
+/* Dropdown toggle flex alignment for arrow icon */
+.mobile nav .has-dropdown > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sub-menu styling */
+.mobile nav .mobile-dropdown {
+  display: none;
+  background-color: #ffffff;
+}
+
+.mobile nav .mobile-dropdown li:last-child{
+    border-bottom: 0;
+}
+
+.mobile nav .has-dropdown.open .mobile-dropdown {
+  display: block;
+}
+
+.mobile nav .mobile-dropdown a {
+  padding-left: 40px; /* Indents the two sublines */
+}
+
+
+
+const navToggle = document.getElementById("navToggle");
+const mobileNav = document.getElementById("mobileNav");
+const toggleIcon = navToggle.querySelector("i");
+
+navToggle.addEventListener("click", () => {
+  const isOpen = mobileNav.classList.toggle("active");
+
+  if (isOpen) {
+    toggleIcon.classList.replace("fa-bars", "fa-xmark");
+  } else {
+    toggleIcon.classList.replace("fa-xmark", "fa-bars");
+  }
+});
+
+// Active Link
+const activeLink = document.querySelectorAll('.nav-bar  nav ul li a')
+
+  activeLink.forEach(link => {
+    if (link.href === window.location.href) link.classList.add('active');
+  });
+
+
+  same code are not work properly 
+  currect the code
