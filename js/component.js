@@ -2,7 +2,7 @@ class SiteHeader extends HTMLElement{
     connectedCallback() {
         // Replace this with your actual header HTML
         this.innerHTML=`
-        <header id="navebar" class="nav-bar">
+         <header id="navebar" class="nav-bar">
         <div class="contener">
             <div>
                 <a href="index.html">
@@ -15,14 +15,21 @@ class SiteHeader extends HTMLElement{
                     <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <div class="drop-down-nav">
                     <li><a href="#">Prophetic Scrolls</a>
-                    <ul class="extra">
-                    <div>
+                         <span class="arrow" id="arrowIcon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                        <div class="two-nav">
+                    <ul>
+                    
                        <li><a href="scrolls.html">Proohetic Scrolls</a></li>
-                        <li><a href="">Scroll Archives</a></li>
-                        </div>
+                        <li><a href="scroll-2.html">Scroll Archives</a></li>
+                    
                     </ul>
+                    </div>
                     </li>
+                    </div>
                     <li><a href="decrees.html">Decrees & Prayers</a></li>
                     <li><a href="revelations.html">Teachings & Revelations</a></li>
                     <li><a href="community.html">The Remnant Community</a></li>
@@ -48,7 +55,7 @@ class SiteHeader extends HTMLElement{
                 </a>
                 <ul class="mobile-dropdown">
                     <li><a href="scrolls.html">Prophetic Scrolls</a></li>
-                    <li><a href="archives.html">Scroll Archives</a></li>
+                    <li><a href="scroll-2.html">Scroll Archives</a></li>
                 </ul>
             </li>
             <li><a href="decrees.html">Decrees & Prayers</a></li>
@@ -60,6 +67,7 @@ class SiteHeader extends HTMLElement{
 </div>
         </div>
     </header>
+
         `;
     }
 }

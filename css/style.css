@@ -139,58 +139,57 @@ li {
     font-size: 13px;
 }
 
-/* Updated to share hover & active color styles */
 .nav-bar .moniter nav ul li a:hover,
 .nav-bar .moniter nav ul li a.active {
     color: var(--text-color-y);
 }
 
-.nav-bar .moniter nav ul li:nth-child(3)::after {
-    content: "\f078";
-    font-weight: 900;
-    padding-left: 5px;
-    font-family: "Font Awesome 6 Free";
-    font-size: 13px;
-    color: var(--rev-wh-color);
-    cursor: pointer;
-    transition: all .2s linear;
-}
+/* droup-down-nav */
 
-.nav-bar nav ul li:nth-child(3) {
+.nav-bar .drop-down-nav{
+    color: var(--rev-wh-color);
     position: relative;
 }
 
-.nav-bar nav .extra {
-    display: none;
-    transition: all 0.8s;
+.nav-bar .drop-down-nav:hover{
+    color: var(--text-color-y);
 }
 
-.nav-bar nav ul li:nth-child(3):hover .extra {
-    position: absolute;
+.nav-bar .drop-down-nav:hover a, .nav-bar .drop-down-nav:hover{
+    color: var(--text-color-y);
+}
+
+.nav-bar .two-nav{
+    opacity: 0;
+}
+
+.nav-bar .drop-down-nav:hover .two-nav{
+    transition: all 0.4s ease;
+    opacity: 1;
     width: 200px;
+    position: absolute;
     top: 30px;
-    row-gap: 1px;
-    left: -12px;
-    display: block;
-    flex-direction: column;
-    transition: all 0.8s;
+    left: 5px;
+
 }
 
-.nav-bar .extra li a {
+.nav-bar .two-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-bar .two-nav ul li a{
+    background-color: var(--rev-wh-color);
+    color: var(--rev-bl-color) !important;
+    width: 100%;
+    padding: 10px;
     display: inline-block;
 }
 
-.nav-bar nav .extra a {
-    padding: 12px 25px;
-    color: var(--rev-bl-color);
-    background-color: var(--rev-wh-color);
-}
-
-/* Updated extra dropdown links to share hover & active consistency */
-.nav-bar nav .extra a:hover,
-.nav-bar nav .extra a.active {
+.nav-bar .two-nav ul li a:hover, .nav-bar .two-nav ul li a.active{
     background-color: var(--text-color-y);
-    color: var(--rev-wh-color);
+    color: var(--rev-wh-color) !important;
 }
 
 .nav-toggle {
@@ -1034,6 +1033,7 @@ li {
 
 #pro-scroll {
     background-image: url('../image/top-img.jpg');
+
 }
 
 /* ----------------------------------------------- scroll ----------------------------------------------- */
@@ -1234,6 +1234,8 @@ li {
 
 #archive{
     background-image: url('../image/pg-4-top.jpg');
+    background-size: cover;
+
 }
 
 /* ------------------------------------------------- Archive --------------------------------------------- */
@@ -1245,6 +1247,8 @@ li {
     display: flex;
     justify-content: center;
     padding: 100px 15px;
+    background-color: white;
+    position: relative;
 }
 .fea-tured .contener{
     display: flex;
