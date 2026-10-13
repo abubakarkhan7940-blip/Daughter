@@ -19,7 +19,6 @@ class SiteHeader extends HTMLElement{
                     <li><a href="#">Prophetic Scrolls</a>
                          <span class="arrow-mean" id="arrow-mean">
                         <i class="fa-solid fa-chevron-down"></i>
-                        <i class="fa-solid fa-chevron-up"></i>
                     </span>
                         <div class="two-nav">
                     <ul>
