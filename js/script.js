@@ -37,10 +37,17 @@ activeMobileLinks.forEach(link => {
 
 
 
+
+
+
+
+
+
 // Mobile
   const dropdownToggle = document.getElementById('dropdownToggle');
 const dropdownParent = document.getElementById('dropdownParent');
 const arrowIcon = document.getElementById('arrowIcon');
+
 
 dropdownToggle.addEventListener('click', function(e) {
     e.preventDefault(); // Prevents page jump
@@ -49,12 +56,11 @@ dropdownToggle.addEventListener('click', function(e) {
     dropdownParent.classList.toggle('open');
     
     // Change arrow direction based on state
-    
     if (dropdownParent.classList.contains('open')) {
-    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
-} else {
-    arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
-}
+        arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+    } else {
+        arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+    }
 });
 
 // ---------------------------------------------------slaider---------------------------------------------------

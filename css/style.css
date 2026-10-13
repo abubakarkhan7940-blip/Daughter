@@ -158,6 +158,11 @@ li {
 .nav-bar .drop-down-nav:hover a, .nav-bar .drop-down-nav:hover{
     color: var(--text-color-y);
 }
+.nav-bar .drop-down-nav:hover .fa-chevron-down{
+    rotate: 180deg;
+    transition: all 0.4s ease;
+}
+
 
 .nav-bar .two-nav{
     opacity: 0;
@@ -196,6 +201,8 @@ li {
   display: none;
 }
 
+
+
 .nav-bar .mobile {
     display: none;
 }
@@ -217,6 +224,7 @@ li {
 .nav-bar .mobile nav .extra li {
     display: inline-block;
 }
+
 
 /* kmsif9igin */
 
@@ -277,6 +285,15 @@ li {
     background-color: var(--text-color-y);
     color: var(--rev-wh-color);
 }
+
+.mobile nav .arrow i {
+    transition: transform 0.4s ease;
+}
+
+.mobile nav .has-dropdown.open .arrow i {
+    transform: rotate(180deg);
+}
+
 /* -------------------------------------------------- Header ----------------------------------------------- */
 
 

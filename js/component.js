@@ -17,8 +17,9 @@ class SiteHeader extends HTMLElement{
                     <li><a href="about.html">About</a></li>
                     <div class="drop-down-nav">
                     <li><a href="#">Prophetic Scrolls</a>
-                         <span class="arrow" id="arrowIcon">
+                         <span class="arrow-mean" id="arrow-mean">
                         <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
                     </span>
                         <div class="two-nav">
                     <ul>
@@ -50,8 +51,8 @@ class SiteHeader extends HTMLElement{
                 <a href="#" class="dropdown-toggle" id="dropdownToggle">
                     Prophetic Scrolls
                     <span class="arrow" id="arrowIcon">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </span>
                 </a>
                 <ul class="mobile-dropdown">
                     <li><a href="scrolls.html">Prophetic Scrolls</a></li>
